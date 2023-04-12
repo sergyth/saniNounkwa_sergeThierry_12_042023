@@ -1,0 +1,19 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    width: 117px;
+    height: 1024px;
+    justify-content: space-around;
+    align-items: center;
+}
+.copyright{
+    transform: rotate(-90deg);
+    color: #fff;
+    width: 200px;
+}
+.icon{
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+}
