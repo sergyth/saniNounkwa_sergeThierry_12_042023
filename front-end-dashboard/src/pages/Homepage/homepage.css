@@ -1,0 +1,34 @@
+
+.wrapper{
+    display: flex;
+}
+.dataType-wrapper{
+ margin: 300px auto;
+ display: flex;
+ flex-direction: column;
+ width: 500px;  
+}
+.choose-dataType-wrapper{
+    text-align: center;
+}
+.choose-dataType{
+    margin-bottom: 100px;
+    
+}
+.dataType-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.dataType, .userButton{
+    width: 200px;
+    height: 50px;
+    background:#FF0000;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+.userButton{
+    margin-bottom: 30px;
+}
