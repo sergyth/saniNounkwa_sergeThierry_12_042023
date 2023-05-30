@@ -8,20 +8,16 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import GetData from '../../service/GetData.js'
-import { useState } from "react";
 
+const ChartActivity = ({dataActivity}) => {
 
-
-const ChartActivity = () => {
-const [data, setData] = useState()
   return (
     <div>
       < ResponsiveContainer width="100%" height="100%">
         <BarChart
         width={835}
         height={320}
-        data={}
+        data={dataActivity}
         margin={{
           top: 100,
           right: 30,
