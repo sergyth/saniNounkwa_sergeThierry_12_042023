@@ -1,15 +1,18 @@
 
 .wrapper{
     display: flex;
+    border: 1px solid red; 
 }
 .dataType-wrapper{
  margin: 300px auto;
  display: flex;
  flex-direction: column;
- width: 500px;  
+ width: 100%; 
+ border: 1px solid rgb(109, 210, 33); 
 }
 .choose-dataType-wrapper{
     text-align: center;
+    border: 1px solid red; 
 }
 .choose-dataType{
     margin-bottom: 100px;
@@ -18,6 +21,7 @@
 .dataType-buttons{
     display: flex;
     justify-content: space-between;
+    border: 1px solid red;
 }
 .dataType, .userButton{
     width: 200px;

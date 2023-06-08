@@ -1,9 +1,10 @@
 export default class UserModel {
-  constructor(activity, userInfos, sessions, firstName) {
+  constructor(activity, userInfos, sessions, firstName, performance) {
     this.activity = activity
     this.userInfos = userInfos
     this.firstName = firstName
     this.sessions = sessions
+    this.performance = performance
   }
 
   getInfos() {
@@ -19,5 +20,8 @@ export default class UserModel {
 
   getSessions() {
     return this.sessions
+  }
+  getPerformance(){
+    return this.performace
   }
 }

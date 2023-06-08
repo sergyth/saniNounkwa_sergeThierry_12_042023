@@ -1,0 +1,30 @@
+.chartObjectif-wrapper {
+  width: 258px;
+  height: 263px;
+  background: #ff0000;
+  margin: 100px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
+  border-radius: 5px;
+}
+.chartObjectif-title {
+  width: 148px;
+  height: 57px;
+  padding: 20px 0 0 20px;
+  color: white;
+  opacity: 0.5;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+}
+.tooltipLabel{
+    height: 24px;
+    width: 25px;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    
+     
+}

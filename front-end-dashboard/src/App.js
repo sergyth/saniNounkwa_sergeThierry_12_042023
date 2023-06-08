@@ -16,7 +16,6 @@ const router = createBrowserRouter([
         path: "/", 
         element: <Accueil/>, 
       },
-      
       {
         path: 'userMock/:userId', 
         element: <Dashboard/>,
@@ -24,7 +23,7 @@ const router = createBrowserRouter([
       {
         path: 'user/:userId', 
         element: <Dashboard/>,
-      },
+      }
   
     ],
   },
