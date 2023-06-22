@@ -1,7 +1,7 @@
 
 .wrapper{
     display: flex;
-    border: 1px solid red; 
+    width: 100%;
 }
 .dataType-wrapper{
  margin: 300px auto;

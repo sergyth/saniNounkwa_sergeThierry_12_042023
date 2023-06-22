@@ -1,6 +1,7 @@
 .greetings-wrapper {
   margin: 50px 0 0 100px;
   font-size: 18px;
+  width: 100%;
 }
 
 .firstname {

@@ -1,0 +1,22 @@
+.dashboard-wrapper{
+    display: flex;
+    width: 100%;
+    flex-direction: column; 
+}
+.dashboard-main{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid purple; */
+}
+.charts-wrapper{
+display: flex;
+flex-direction: column;
+border: 1px solid purple;
+}
+.charts-bottom{
+    display: flex;
+}
+.parameters-wrapper{
+    display: flex;
+    flex-direction: column;
+}

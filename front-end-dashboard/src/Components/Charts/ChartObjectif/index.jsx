@@ -5,7 +5,7 @@ import {
   Tooltip,
   XAxis,
   YAxis,
-  Rectangle
+  Legend,
 } from 'recharts'
 import './chartObjectif.css'
 
@@ -16,49 +16,31 @@ function CustomTooltip({ active, payload }) {
   return null
 }
 
-function CustomizedCursor({ points }) {
-  return (
-    <Rectangle
-      fill="black"
-      opacity={0.1}
-      x={points[0].x}
-      width={39}
-      height={25}
-    />
-
-  )
+function renderLegend() {
+  return <p className="legend">Durée moyenne des sessions</p>
 }
 
 const ChartObjectif = ({ data }) => {
-  console.log(data)
   return (
-    <div className="chartObjectif-wrapper">
-      {/* <p className="chartObjectif-title">Durée moyenne des sessions</p> */}
-      <ResponsiveContainer width='100%' height='100%'>
-        <LineChart data={data} >
-
+    <div className="container">
+      <ResponsiveContainer aspect={1}>
+        <LineChart width={258} height={268} data={data} margin={{left:10, right:10}}>
           <XAxis
             dataKey="day"
             axisLine={false}
+            stroke="#ffffff"
             tickLine={false}
-            opacity={0.5}
-         
           />
-          <YAxis
-            hide={true}
-          />
-          <Tooltip content={<CustomTooltip/>} cursor={<CustomizedCursor/>}  />
+          <YAxis hide={true} />
+          <Tooltip content={<CustomTooltip />} cursor={false} />
+          <Legend content={renderLegend} verticalAlign="top" />
           <Line
             type="monotone"
             dataKey="sessionLength"
-            stroke="white"
-            strokeWidth={2}
-            opacity={0.7}
+            stroke="#ffffff"
             dot={false}
-            activeDot={{
-              r: 4
-            }}
-            
+            activeDot={{ r: 5, stroke: '#ffffff' }}
+            opacity={.5}
           />
         </LineChart>
       </ResponsiveContainer>

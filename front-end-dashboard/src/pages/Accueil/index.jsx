@@ -1,12 +1,7 @@
 
 import Homepage from '../Homepage'
 
-const Accueil = () => {
-  return (
-    <div>
-      <Homepage/>
-    </div>
-  )
-}
+const Accueil = () => <Homepage/>
+ 
 
 export default Accueil

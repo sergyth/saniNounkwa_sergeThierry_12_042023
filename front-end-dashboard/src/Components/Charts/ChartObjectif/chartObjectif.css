@@ -1,30 +1,28 @@
-.chartObjectif-wrapper {
-  width: 258px;
-  height: 263px;
+.container {
   background: #ff0000;
-  margin: 100px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
+  height: 263px;
+  width: 258px;
+  left: 0px;
+  top: 0px;
   border-radius: 5px;
+  margin: 100px;
 }
-.chartObjectif-title {
-  width: 148px;
-  height: 57px;
-  padding: 20px 0 0 20px;
-  color: white;
-  opacity: 0.5;
-  font-style: normal;
+
+.tooltipLabel {
+  height: 24px;
+  width: 25px;
+  font-size: 8px;
   font-weight: 500;
-  font-size: 15px;
   line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  background: #fff;
 }
-.tooltipLabel{
-    height: 24px;
-    width: 25px;
-    font-size: 8px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0px;
-    text-align: center;
-    
-     
+
+.legend {
+  color: #fff;
+  height: 48px;
+  width: 147px;
+  margin: 30px 0 0 30px;
+  opacity: 0.5;
 }

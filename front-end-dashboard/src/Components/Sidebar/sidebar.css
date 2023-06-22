@@ -3,14 +3,17 @@
     flex-direction: column;
     background: #000;
     width: 117px;
-    height: 1024px;
-    justify-content: space-around;
+    justify-content:space-between;
     align-items: center;
+}
+.icon-list{
+  margin-top: 200px;  
 }
 .copyright{
     transform: rotate(-90deg);
     color: #fff;
     width: 200px;
+    margin-bottom: 190px;
 }
 .icon{
     width: 64px;
