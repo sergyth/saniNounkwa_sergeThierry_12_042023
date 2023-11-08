@@ -1,5 +1,51 @@
+@media screen and (min-width: 1024px) and (min-height: 780px) {
+  .layout-wrapper {
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    grid-template-columns: 9% 6% 41% 17% 4% 17% 6%;
+    grid-template-rows: 7% 20% 6% 29% 4% 28% 6%;
+    grid-template-areas:
+      'nav nav nav nav nav nav nav'
+      'navt . grt . . . .'
+      'navt . . . . .  .'
+      'navt . act act . par .'
+      'navt . . . . par .'
+      'navt . obj obj . par .'
+      'navt .  .   .  .  .  .';
+  }
 
-.layout-wrapper{
+  .nav-l {
+    grid-area: nav;
+    background-color: #000;
+  }
+  .nav-t {
+    grid-area: navt;
+    background-color: #000;
+  }
+
+  .greet {
+    grid-area: grt;
+  }
+
+  .act {
+    grid-area: act;
+  }
+
+  .charts-bottom {
+    grid-area: obj;
     display: flex;
-    width: 100%;
+    justify-content: space-between;
+  }
+
+  .params {
+    grid-area: par;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .red {
+    border: 1px solid red;
+  }
 }

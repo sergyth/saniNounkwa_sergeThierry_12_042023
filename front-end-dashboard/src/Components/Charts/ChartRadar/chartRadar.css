@@ -1,9 +1,7 @@
 .radar-container {
-  border-radius: 5px;
+  border-radius: .3rem;
   background: #282d30;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.02);
-  width: 258px;
-  height: 263px;
-  margin-top: 100px;
+  box-shadow: 0rem .1rem .2rem 0rem rgba(0, 0, 0, 0.02);
+  width: 32%;
   text-transform: capitalize;
 }

@@ -1,4 +1,8 @@
-.chartActivity-wrapper{
-    width: 835px;
-    height: 320px;
+@media screen and (min-width: 1024px) and (min-height: 780px) {
+  .act {
+    background-color: #fbfbfb;
+  }
+  .red {
+    border: 1px solid red;
+  }
 }

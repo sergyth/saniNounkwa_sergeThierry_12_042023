@@ -11,13 +11,13 @@ import './chartActivity.css'
 
 const ChartActivity = ({ data }) => {
   return (
-    <div className="chartActivity-wrapper">
+    <div className="act">
       <ResponsiveContainer width="100%" height="100%">
         <BarChart
           data={data}
           margin={{
             top: 100,
-            left: 100,
+            left: 50,
             bottom: 0,
             right: 0,
           }}

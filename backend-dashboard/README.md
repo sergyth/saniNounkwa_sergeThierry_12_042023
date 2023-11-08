@@ -22,7 +22,7 @@ If you are working with several versions of NodeJS, we recommend you install [nv
 - The `yarn` command will allow you to install the dependencies.
 - The `yarn dev` command will allow you to run the micro API.
 
-
+ 
 ## 3. Project (**with Docker**)
 
 ### 2.1 Prerequisites

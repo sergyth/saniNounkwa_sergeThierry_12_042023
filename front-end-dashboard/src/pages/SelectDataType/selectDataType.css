@@ -1,29 +1,29 @@
-
-.wrapper{
-    display: flex;
-    width: 100%;
+.red{
+    border: 1px solid red;
 }
+
 .dataType-wrapper{
  margin: 300px auto;
  display: flex;
  flex-direction: column;
- width: 100%; 
- border: 1px solid rgb(109, 210, 33); 
+ justify-content: center;
+ align-items: center;
+
+
 }
-.choose-dataType-wrapper{
+.label-wrapper{
     text-align: center;
-    border: 1px solid red; 
 }
-.choose-dataType{
+.label{
     margin-bottom: 100px;
     
 }
 .dataType-buttons{
     display: flex;
-    justify-content: space-between;
-    border: 1px solid red;
+    justify-content: center;
+   
 }
-.dataType, .userButton{
+.dataType-button{
     width: 200px;
     height: 50px;
     background:#FF0000;
@@ -32,7 +32,5 @@
     border-radius: 25px;
     border: none;
     cursor: pointer;
-}
-.userButton{
-    margin-bottom: 30px;
+    margin: 0 10px;
 }

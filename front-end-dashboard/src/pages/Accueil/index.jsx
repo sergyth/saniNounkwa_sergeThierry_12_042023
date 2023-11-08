@@ -1,7 +1,7 @@
 
-import Homepage from '../Homepage'
+import SelectDataType from '../SelectDataType'
 
-const Accueil = () => <Homepage/>
+const Accueil = () => <SelectDataType/>
  
 
 export default Accueil

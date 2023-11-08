@@ -1,11 +1,18 @@
-.navbar{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 85%;
-   
+@media screen and (min-width: 1024px) and (min-height: 780px){
+    .red{
+        border: 1px solid red;
+    }
+    
+    .navbar{
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navbar-item {
+        list-style-type: none;
+        color: #fff;
+    }
 }
-.navbar-item {
-list-style-type: none;
-color: #fff;
-}
+
+

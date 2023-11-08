@@ -11,19 +11,19 @@ import './chartRadar.css'
 const ChartRadar = ({ data }) => {
   return (
     <div className="radar-container">
-      <ResponsiveContainer width="100%" aspect={1}>
+      <ResponsiveContainer width="100%">
         <RadarChart  data={data} >
           <PolarGrid radialLines={false} />
           <PolarAngleAxis
             dataKey="kind"
             tickLine={false}
             stroke={'#fff'}
-            fontSize={12}
+            fontSize={8}
             fontWeight={500}
             strokeWidth={0.5}
           />
           <PolarRadiusAxis axisLine={false} tick={false} />
-          <Radar dataKey="value" fill="#ff0101" fillOpacity={0.7} />
+          <Radar dataKey="value" fill="#ff0101" fillOpacity={1} />
         </RadarChart>
       </ResponsiveContainer>
     </div>

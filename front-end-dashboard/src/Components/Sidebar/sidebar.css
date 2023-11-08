@@ -1,22 +1,40 @@
-.sidebar{
+@media screen and (min-width: 1024px) and (min-height: 780px) {
+  .nav-t {
     display: flex;
     flex-direction: column;
     background: #000;
-    width: 117px;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-}
-.icon-list{
-  margin-top: 200px;  
-}
-.copyright{
+  }
+
+  .icon-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    gap: 0.7rem;
+    margin-top: 10rem;
+  }
+
+  .copyright {
+    width: 30%;
+    white-space: nowrap;
     transform: rotate(-90deg);
     color: #fff;
-    width: 200px;
-    margin-bottom: 190px;
-}
-.icon{
-    width: 64px;
-    height: 64px;
-    margin-bottom: 20px;
+    font-family: Roboto;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    letter-spacing: 0rem;
+    margin-bottom: 2rem;
+  }
+
+  .icon {
+    width: 100%;
+  }
+
+  .red {
+    border: 1px solid red;
+  }
 }

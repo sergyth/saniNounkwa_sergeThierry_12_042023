@@ -22,8 +22,8 @@ function renderLegend() {
 
 const ChartObjectif = ({ data }) => {
   return (
-    <div className="container">
-      <ResponsiveContainer aspect={1}>
+    <div className="container ">
+      <ResponsiveContainer >
         <LineChart width={258} height={268} data={data} margin={{left:10, right:10}}>
           <XAxis
             dataKey="day"

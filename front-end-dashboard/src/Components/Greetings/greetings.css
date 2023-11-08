@@ -1,20 +1,23 @@
-.greetings-wrapper {
-  margin: 50px 0 0 100px;
-  font-size: 18px;
-  width: 100%;
-}
+@media screen and (min-width: 1024px) and (min-height: 780px) {
+  .greet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.1rem;
+  }
 
-.firstname {
-  color: #ff0000;
-}
+  .firstname {
+    color: #ff0000;
+  }
 
-.greetings-firstname,
-.firstname {
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0px;
-}
-.greetings-firstname {
-  margin-bottom: 41px;
+  .greetings-firstname,
+  .firstname {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 0rem;
+  }
+  .greetings-firstname {
+    margin-bottom: 2.5rem;
+  }
 }

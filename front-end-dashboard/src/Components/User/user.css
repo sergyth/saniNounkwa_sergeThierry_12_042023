@@ -1,13 +1,15 @@
- .userButton{
-    width: 200px;
-    height: 50px;
-    background:#FF0000;
-    color: #fff;
-    font-size: 2rem;
-    border-radius: 25px;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 30px;
-    text-decoration: none;
-    text-align: center;
+.userButton {
+  width: 200px;
+  height: 50px;
+  background: #ff0000;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

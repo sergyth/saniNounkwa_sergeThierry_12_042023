@@ -5,6 +5,7 @@ import ErrorPage from './pages/ErrorPage';
 import Dashboard from './pages/Dashboard';
 import Layout from './pages/Layout';
 
+
 function App() {
 const router = createBrowserRouter([
   {
@@ -17,23 +18,16 @@ const router = createBrowserRouter([
         element: <Accueil/>, 
       },
       {
-        path: 'userMock/:userId', 
-        element: <Dashboard/>,
-      },
-      {
         path: 'user/:userId', 
         element: <Dashboard/>,
-      }
-  
+      },
     ],
   },
 
 ])
 
   return (
-    <div className="app">
       <RouterProvider router={router}/>
-    </div>
   );
 }
 

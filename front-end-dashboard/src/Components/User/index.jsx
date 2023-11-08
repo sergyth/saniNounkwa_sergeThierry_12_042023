@@ -4,7 +4,7 @@ import './user.css'
 const User = (props) => {
   const userId = props.id
   return (
-    <Link className='userButton' to={`/userMock/${userId}`} key={props.id}  >{props.firstName}</Link>
+    <Link className='userButton' to={`/user/${userId}`} key={props.id} >{props.firstName}</Link>
   )
 }
 
