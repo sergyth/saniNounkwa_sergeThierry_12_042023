@@ -9,7 +9,7 @@ import {
 } from 'recharts'
 import './chartObjectif.css'
 
-function CustomTooltip({ active, payload }) {
+function CustomTooltipObj({ active, payload }) {
   if (active && payload && payload.length) {
     return <p className="tooltipLabel">{`${payload[0].value}min`}</p>
   }
@@ -22,7 +22,7 @@ function renderLegend() {
 
 const ChartObjectif = ({ data }) => {
   return (
-    <div className="container ">
+    <div className="obj-container ">
       <ResponsiveContainer >
         <LineChart width={258} height={268} data={data} margin={{left:10, right:10}}>
           <XAxis
@@ -32,7 +32,7 @@ const ChartObjectif = ({ data }) => {
             tickLine={false}
           />
           <YAxis hide={true} />
-          <Tooltip content={<CustomTooltip />} cursor={false} />
+          <Tooltip content={<CustomTooltipObj />} cursor={false} />
           <Legend content={renderLegend} verticalAlign="top" />
           <Line
             type="monotone"

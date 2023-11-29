@@ -1,8 +1,19 @@
 .chartRadial-container {
-  border-radius: 5px;
-  border: 1px solid salmon;
   width: 32%;
   border-radius: .3rem;
   background: #fbfbfb;
   box-shadow: 0rem .1rem .2rem 0rem rgba(0, 0, 0, 0.02);
+  position: relative;
+}
+.chartRadial-container h3{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.legendRadial{
+  font-size: 1.2rem;
+  color: #000;
+  width: 5rem;
+  text-align: center;
 }

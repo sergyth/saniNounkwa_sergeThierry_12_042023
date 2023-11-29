@@ -1,0 +1,14 @@
+@media screen and (min-width: 1024px) and (min-height: 780px) {
+  .red {
+    border: 1px solid red;
+  }
+
+  .toggleButton {
+    display: inline-block;
+    margin-bottom: 2rem;
+    background-color: #e60000;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+}

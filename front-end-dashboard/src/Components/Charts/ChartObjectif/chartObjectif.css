@@ -1,5 +1,5 @@
 @media screen and (min-width: 1024px) and (min-height: 780px) {
-  .container {
+  .obj-container {
     background: #ff0000;
     width: 32%;
     left: 0rem;
@@ -26,7 +26,5 @@
     margin: 1.9rem 0 0 1.9rem;
     opacity: 0.5;
   }
-  .red {
-    border: 3px solid green;
-  }
+ 
 }

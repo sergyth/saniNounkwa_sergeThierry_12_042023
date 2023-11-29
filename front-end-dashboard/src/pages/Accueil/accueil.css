@@ -1,0 +1,38 @@
+@media screen and (min-width: 1024px) and (min-height: 780px) {
+    .red{
+        border: 1px solid red;
+    }
+
+    .homePage{
+        display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 10rem;
+    }
+    .title{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .users{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;
+        
+    }
+    .users a{
+        text-decoration: none;
+        border: 1px solid #000;
+        padding: 1rem;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        background-color: #e60000;
+        cursor: pointer;
+        color: #fff;
+    } 
+}
+  
+
+
+

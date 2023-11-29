@@ -12,13 +12,13 @@ const ChartRadar = ({ data }) => {
   return (
     <div className="radar-container">
       <ResponsiveContainer width="100%">
-        <RadarChart  data={data} >
+        <RadarChart  data={data} outerRadius="55%">
           <PolarGrid radialLines={false} />
           <PolarAngleAxis
             dataKey="kind"
             tickLine={false}
             stroke={'#fff'}
-            fontSize={8}
+            fontSize={10}
             fontWeight={500}
             strokeWidth={0.5}
           />

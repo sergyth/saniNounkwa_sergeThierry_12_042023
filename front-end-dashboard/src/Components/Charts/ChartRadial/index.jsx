@@ -3,44 +3,48 @@ import {
   RadialBar,
   Legend,
   ResponsiveContainer,
+  Tooltip,
 } from 'recharts'
 
 import './chartRadial.css'
 
 const ChartRadial = ({ data }) => {
-  const style = {
-    top: '50%',
-    right: 0,
-    transform: 'translate(0, -50%)',
-    lineHeight: '1.5rem',
+  const CustomLegend = () => {
+    const score = data.score
+    return (
+      <div className="legendRadial">
+        <b>{score}%</b><br/>
+        de votre objectif
+      </div>
+    )
   }
-  
   return (
     <div className="chartRadial-container ">
-      <ResponsiveContainer width="100%" >
+      <h3>Score</h3>
+      <ResponsiveContainer width="100%">
         <RadialBarChart
-         startAngle={90}
-         endAngle={200}
+          startAngle={90}
+          endAngle={200}
           innerRadius={80}
           outerRadius={260}
-          barSize={9}
+          barSize={10}
           data={[data]}
         >
           <RadialBar
             minAngle={15}
+            cornerRadius={5}
             background
-            label={{ position: 'center', fill: '#000' }}
+            clockWise={true}
             dataKey="score"
-            fill='#fff'
           />
           <Legend
-            iconSize={10}
             layout="vertical"
             verticalAlign="middle"
-            wrapperStyle={style}
+            align="center"
+            content={<CustomLegend />}
           />
+          
         </RadialBarChart>
-        
       </ResponsiveContainer>
     </div>
   )

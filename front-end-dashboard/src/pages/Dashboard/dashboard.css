@@ -2,6 +2,18 @@
   .red {
     border: 1px solid red;
   }
+  .dashboard{
+    display: grid;
+    grid-template-columns:6% 45% 25% 4% 14% 6%;
+    grid-template-rows: 5% 14% 6% 35% 35% 9%;
+    grid-template-areas: 
+      ' . . . . . .'
+      ' . grt . . . .'
+      '. . . . . .'
+      ' . act act . par  .'
+      ' . obj obj . par  .'
+      ' .  .   .  .  .  .';
+  }
 
   .charts-bottom {
     display: flex;
@@ -31,5 +43,26 @@
   .lipides p,
   .glucides p {
     font-weight: bold;
+  }
+  
+  .greet {
+    grid-area: grt;
+  }
+
+  .act {
+    grid-area: act;
+  }
+ 
+  .charts-bottom {
+    grid-area: obj;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .params {
+    grid-area: par;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }

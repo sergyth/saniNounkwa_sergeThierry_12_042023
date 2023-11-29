@@ -1,8 +1,48 @@
 @media screen and (min-width: 1024px) and (min-height: 780px) {
+  
   .act {
     background-color: #fbfbfb;
+    position: relative;
   }
-  .red {
+ 
+  h4{
+    position: absolute;
+    top: 1.2rem;
+    left: 2.4rem;
+    font-style: italic;
+  }
+  
+  
+  .label{
+    position: absolute;
+    top: 20px;
+    right: 60px;
+  }
+
+  .black,
+  span.red{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border:1px solid transparent;
+    border-radius: 50%;
+    background-color: #000;
+  }
+
+  span.red {
     border: 1px solid red;
+    background-color: #e60000;
+    margin-left: 15px;
   }
+  .customTooltip{
+    background-color: #e60000;
+    color: #fff;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: .8rem;
+  }
+
 }
