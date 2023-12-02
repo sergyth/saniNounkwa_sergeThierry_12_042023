@@ -1,8 +1,5 @@
 @media screen and (min-width: 1024px) and (min-height: 780px) {
-    .red{
-        border: 1px solid red;
-    }
-
+ 
     .homePage{
         display: flex;
     flex-direction: column;
@@ -30,6 +27,7 @@
         background-color: #e60000;
         cursor: pointer;
         color: #fff;
+        margin-right: 1rem;
     } 
 }
   

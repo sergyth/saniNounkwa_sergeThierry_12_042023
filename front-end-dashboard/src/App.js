@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { useState } from 'react'
 import './App.css';
 import Accueil from './pages/Accueil';
 import ErrorPage from './pages/ErrorPage';
@@ -7,7 +8,16 @@ import Layout from './pages/Layout';
 
 
 function App() {
-const router = createBrowserRouter([
+  const [useMockData, setUseMockData] = useState(false);
+  const toggleData = () => setUseMockData(!useMockData)
+  const [showUserList, setShowUserList] = useState(useMockData);
+  const handleUserList = () => setShowUserList(!useMockData)
+  const handleData = () => {
+    toggleData()
+    handleUserList()
+  }
+
+  const router = createBrowserRouter([
   {
     path: "/", 
     element: <Layout/>,
@@ -15,11 +25,11 @@ const router = createBrowserRouter([
     children: [
       { 
         index:true, 
-        element: <Accueil/>, 
+        element: <Accueil useMockData={useMockData} showUserList={showUserList} handleData={handleData} />, 
       },
       {
         path: 'user/:userId', 
-        element: <Dashboard/>,
+        element: <Dashboard useMockData={useMockData}/>,
       },
     ],
   },

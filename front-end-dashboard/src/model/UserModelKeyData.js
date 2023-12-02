@@ -1,9 +1,9 @@
 export default class UserModelKeyData {
   constructor(data) {
-    this.calorie = data.keyData.calorieCount.toLocaleString('en-US');
-    this.lipide = data.keyData.lipidCount
-    this.glucide = data.keyData.carbohydrateCount
-    this.proteine = data.keyData.proteinCount
+    this.calorie = data.calorieCount.toLocaleString();
+    this.lipide = data.lipidCount
+    this.glucide = data.carbohydrateCount
+    this.proteine = data.proteinCount
   }
   getCalorie() {
     const calorie = this.calorie

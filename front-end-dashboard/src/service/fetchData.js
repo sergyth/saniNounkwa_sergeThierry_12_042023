@@ -10,37 +10,42 @@ const fetchData = async (url) => {
   }
 };
 
+// Récupère les données de l'utilisateur, soit à partir des données mockées, soit de l'API
 export const getUserData = async (userId, useMockData) => {
   if (useMockData) {
-    return  USER_MAIN_DATA.find(user => user.id.toString() === userId);
+    const mockData = USER_MAIN_DATA.find(user => user.id.toString() === userId);
+    return mockData ? { data: mockData } : null;
   } else {
     return await fetchData(`http://localhost:3000/user/${userId}`);
   }
 };
 
+// Récupère les données d'activité de l'utilisateur
 export const getUserActivity = async (userId, useMockData) => {
   if (useMockData) {
-    console.log(`mockData ${useMockData}`)
-    return USER_ACTIVITY.find(activity => activity.userId.toString() === userId);
+    const mockData = USER_ACTIVITY.find(activity => activity.userId.toString() === userId);
+    return mockData ? { data: mockData } : null;
   } else {
-    console.log(`mockData ${useMockData}`)
     return await fetchData(`http://localhost:3000/user/${userId}/activity`);
   }
 };
 
+// Récupère les données des sessions moyennes de l'utilisateur
 export const getUserAverageSessions = async (userId, useMockData) => {
   if (useMockData) {
-    return USER_AVERAGE_SESSIONS.find(session => session.userId.toString() === userId);
+    const mockData = USER_AVERAGE_SESSIONS.find(session => session.userId.toString() === userId);
+    return mockData ? { data: mockData } : null;
   } else {
     return await fetchData(`http://localhost:3000/user/${userId}/average-sessions`);
   }
 };
 
+// Récupère les données de performance de l'utilisateur
 export const getUserPerformance = async (userId, useMockData) => {
   if (useMockData) {
-    return USER_PERFORMANCE.find(performance => performance.userId.toString() === userId);
+    const mockData = USER_PERFORMANCE.find(performance => performance.userId.toString() === userId);
+    return mockData ? { data: mockData } : null;
   } else {
     return await fetchData(`http://localhost:3000/user/${userId}/performance`);
   }
 };
-
